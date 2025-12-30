@@ -1,0 +1,8 @@
+@app.route("/dashboard")
+def dashboard():
+    if "hr_user" not in session:
+        return redirect("/login")
+    return render_template("dashboard.html")
+<th>Skills</th>
+...
+<td>{{ row.skills | join(", ") }}</td>

@@ -1,0 +1,12 @@
+import bcrypt
+
+# Password for hr1
+password_hr1 = "1234".encode("utf-8")
+hash_hr1 = bcrypt.hashpw(password_hr1, bcrypt.gensalt()).decode()
+
+# Password for hr2
+password_hr2 = "admin".encode("utf-8")
+hash_hr2 = bcrypt.hashpw(password_hr2, bcrypt.gensalt()).decode()
+
+print("hr1,", hash_hr1)
+print("hr2,", hash_hr2)

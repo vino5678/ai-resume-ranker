@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:Arial;">
+<h2>Upload Resume (PDF/Image)</h2>
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="resume" required><br><br>
+<button type="submit">Upload</button>
+</form>
+<p style="color:red">{{msg}}</p>
+<a href="/logout">Logout</a>
+</body>
+</html>
